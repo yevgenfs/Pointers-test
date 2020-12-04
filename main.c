@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 int main(void)
 {
 	char alph[26];
