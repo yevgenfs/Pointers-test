@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(void)
 {
 	int first_number     = 0;
