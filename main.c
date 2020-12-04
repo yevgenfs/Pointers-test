@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 void swap (int *first, int *second)
 {
 	int swaper = *first;
