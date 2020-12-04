@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void revrse(char *pointer)
 {
   int len = 0,i = 0;
