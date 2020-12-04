@@ -8,6 +8,7 @@ int main(void)
 	{
 		*(ptr+i) = i + 'A';
 	}
+	
 	for(int i = 0; i < 26; i++)
 	{
 		printf("%c ",*(ptr+i));
