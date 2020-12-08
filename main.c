@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /* *
- * @brief program  to sort an array using Pointer
+ * @brief program in C to compute the sum of all elements in an array using pointers
  * */
 int main(void)
 {
@@ -14,31 +14,15 @@ int main(void)
 
   int array[lenght];
   int *ptr = array;
+  int sum = 0;
 
   for(int i = 0; i < lenght; i++)
   {
     printf("input number %d \n", i);
     scanf("%d", (ptr+i));
     printf("element - %d : %d \n", i, *(ptr+i));
+    sum +=  *(ptr+i);
   }
 
-  for(int i = 0; (i < lenght - 1); i++)
-  {
-    for(int j = 0; j < lenght - i -1; j++)
-    {
-      if (*(ptr+j) > *(ptr+j+1))
-      {
-        int swap   = *(ptr+j);
-        *(ptr+j)   = *(ptr+j+1);
-        *(ptr+j+1) = swap;
-      }
-    }
-  }
-
-  printf("sorted array \n");
-
-  for (int i = 0; i < lenght; i++)
-  {
-    printf("element - %d : %d \n", i, *(ptr+i));
-  }
+  printf("sum = %d  \n", sum);
 }
